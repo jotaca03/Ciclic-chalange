@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="./js/main.js"></script>
+    
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+
+    <title>Ciclic - Investment Simulator</title>
+</head>
+<body>
+    <!-- Logo -->
+    <header>
+        <div class="image-container">
+            <img src="https://www.ciclic.com.br/themes/ciclic-promocoes-2019/assets/img/logo.png" alt="Ciclic">
+        </div>
+    </header>
+    <main>
+        <div class="holder">
+            <form action="" class="main-container step step-1" id="myForm">
+                <fieldset>
+                    <legend>Investment Simulator</legend>
+                    <!-- Inputs to insert information -->
+                    <div class="input-block">
+                        <label for="name">Name:</label>
+                        <input name="name" id="name" type="text" placeholder="Please enter your name" required>
+                    </div>
+                    <div class="input-block">
+                        <label for="dep">Mounthly deposits's value:</label>
+                        <input name="dep" id="dep" type="number" placeholder="How much for each deposit?" required>
+                    </div>
+                    <div class="input-block">
+                        <label for="duration">Investment's duration:</label>
+                        <input name="duration" id="duration" type="date" placeholder="(In years.)" required>
+                    </div>
+                    <!-- button used to submit and calculate the intest rate -->
+                    <!-- .step-2.conteudo -->
+                    <button id="simulate" type="submit" onclick="goToNextStep()">SIMULATE</button>
+                </fieldset>
+            </form>
+            <div class="main-container step step-2">
+                <h2>Olá ,"Nome"</h2>
+                <p>Juntando "deposito" todo mês, você terá "resultado" em "tempo"</p>
+                <button onclick="goToPreviousStep()">VOLTAR</button>
+            </div>
+        </div>
+    </main>
+    <script src="./js/form.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  text-rendering: geometricPrecision;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #01e0cc;
+    font-family: Archivo;
+    
+}
+
+.image-container {
+    width: 36rem;
+    margin: 1rem auto;
+    padding: 1rem 0 1rem 0;
+    background: #ffffff;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.image-container img {
+    width: 10rem
+}
+
+.main-container {
+    width: 36rem;
+    height: 100rem;
+    margin: 1rem auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container p {
+    margin-top: 3rem;
+    width: 28rem;
+}
+
+fieldset legend {
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #EAECEF;
+    width: 20rem;
+    margin-bottom: 1rem;
+}
+
+fieldset .input-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 2rem
+}
+
+.input-block label {
+    font-size: 1.1rem;
+}
+
+.input-block input {
+    width: 16rem;
+    height: 2rem;
+    border: 1px solid #01e0cc;
+    border-radius: 10px;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+button {
+    margin: 0 auto 2rem;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12rem;
+    height: 3rem;
+    background-color: #BBF965;
+    border: 1px solid #01e0cc;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+/* a partir desse ponto, é teste */
+.step {
+    transition: .5s all;
+  }
+  
+  [class*="step-"] {
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+  }
+  
+  .show-view-1 .step-1 {
+    opacity: 1;
+    visibility: visible;
+    max-height: 500px;
+  }
+  
+  .show-view-2 .step-2 {
+    opacity: 1;
+    visibility: visible;
+    max-height: 500px;
+    font-size: 1.6rem;
+  }
